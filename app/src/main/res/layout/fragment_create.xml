@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QR Creator"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+    <!-- Tabs -->
+    <LinearLayout
+        android:id="@+id/tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+        <Button
+            android:id="@+id/btnTools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tools"
+            android:backgroundTint="@color/green_200"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Media"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/button_color"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/qrRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        app:spanCount="3"/>
+</LinearLayout>

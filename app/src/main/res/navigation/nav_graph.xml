@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.dashboard.main.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_emailFragment4"
+            app:destination="@id/emailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_clipboardFragment2"
+            app:destination="@id/clipboardFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_discordFragment"
+            app:destination="@id/discordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_websiteFragment"
+            app:destination="@id/websiteFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_wiFiFragment"
+            app:destination="@id/wiFiFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_contactFragment"
+            app:destination="@id/contactFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_cellPhoneFragment"
+            app:destination="@id/cellPhoneFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_SMSFragment"
+            app:destination="@id/SMSFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_myCardFragment"
+            app:destination="@id/myCardFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_GPSFragment"
+            app:destination="@id/GPSFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_calenderFragment"
+            app:destination="@id/calenderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_textFragment"
+            app:destination="@id/textFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_itemCodeFragment"
+            app:destination="@id/itemCodeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_facebookFragment"
+            app:destination="@id/facebookFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_mainFragment_to_youtubeFragment"
+            app:destination="@id/youtubeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_whatsappFragment"
+            app:destination="@id/whatsappFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_paypalFragment"
+            app:destination="@id/paypalFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_twitterFragment"
+            app:destination="@id/twitterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_instagramFragment"
+            app:destination="@id/instagramFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_spotifyFragment"
+            app:destination="@id/spotifyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_tiktokFragment"
+            app:destination="@id/tiktokFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_mainFragment_to_viberFragment"
+            app:destination="@id/viberFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_QRResultFragment"
+            app:destination="@id/QRResultFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.EmailFragment"
+        tools:layout="@layout/fragment_email"
+        android:label="EmailFragment" >
+        <action
+            android:id="@+id/action_emailFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/emailFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/clipboardFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.ClipboardFragment"
+        tools:layout="@layout/fragment_clipboard"
+        android:label="ClipboardFragment" >
+        <action
+            android:id="@+id/action_clipboardFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/clipboardFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/websiteFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.WebsiteFragment"
+        android:label="fragment_website"
+        tools:layout="@layout/fragment_website" >
+        <action
+            android:id="@+id/action_websiteFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/websiteFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/wiFiFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.WiFiFragment"
+        android:label="fragment_wi_fi"
+        tools:layout="@layout/fragment_wi_fi" >
+        <action
+            android:id="@+id/action_wiFiFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/wiFiFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_contactFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/contactFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cellPhoneFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.CellPhoneFragment"
+        android:label="fragment_cell_phone"
+        tools:layout="@layout/fragment_cell_phone" >
+        <action
+            android:id="@+id/action_cellPhoneFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/cellPhoneFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/SMSFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.SMSFragment"
+        android:label="fragment_s_m_s"
+        tools:layout="@layout/fragment_s_m_s" >
+        <action
+            android:id="@+id/action_SMSFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/SMSFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/myCardFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.MyCardFragment"
+        android:label="fragment_my_card"
+        tools:layout="@layout/fragment_my_card" >
+        <action
+            android:id="@+id/action_myCardFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/myCardFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/calenderFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.CalenderFragment"
+        android:label="fragment_calender"
+        tools:layout="@layout/fragment_calender" >
+        <action
+            android:id="@+id/action_calenderFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/calenderFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/GPSFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.GPSFragment"
+        android:label="fragment_g_p_s"
+        tools:layout="@layout/fragment_g_p_s" >
+        <action
+            android:id="@+id/action_GPSFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/GPSFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/textFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.TextFragment"
+        android:label="fragment_text"
+        tools:layout="@layout/fragment_text" >
+        <action
+            android:id="@+id/action_textFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/textFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/itemCodeFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.tools.ItemCodeFragment"
+        android:label="fragment_item_code"
+        tools:layout="@layout/fragment_item_code" >
+        <action
+            android:id="@+id/action_itemCodeFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/itemCodeFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/facebookFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.FacebookFragment"
+        android:label="fragment_facebook"
+        tools:layout="@layout/fragment_facebook" >
+        <action
+            android:id="@+id/action_facebookFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/facebookFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/youtubeFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.YoutubeFragment"
+        android:label="fragment_youtube"
+        tools:layout="@layout/fragment_youtube" >
+        <action
+            android:id="@+id/action_youtubeFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/youtubeFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/whatsappFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.WhatsappFragment"
+        android:label="fragment_whatsapp"
+        tools:layout="@layout/fragment_whatsapp" >
+        <action
+            android:id="@+id/action_whatsappFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/whatsappFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/paypalFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.PaypalFragment"
+        android:label="fragment_paypal"
+        tools:layout="@layout/fragment_paypal" >
+        <action
+            android:id="@+id/action_paypalFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/paypalFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/twitterFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.TwitterFragment"
+        android:label="fragment_twitter"
+        tools:layout="@layout/fragment_twitter" >
+        <action
+            android:id="@+id/action_twitterFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/twitterFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/instagramFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.InstagramFragment"
+        android:label="fragment_instagram"
+        tools:layout="@layout/fragment_instagram" >
+        <action
+            android:id="@+id/action_instagramFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/instagramFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/spotifyFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.SpotifyFragment"
+        android:label="fragment_spotify"
+        tools:layout="@layout/fragment_spotify" >
+        <action
+            android:id="@+id/action_spotifyFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/spotifyFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/tiktokFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.TiktokFragment"
+        android:label="fragment_tiktok"
+        tools:layout="@layout/fragment_tiktok" >
+        <action
+            android:id="@+id/action_tiktokFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/tiktokFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/viberFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.ViberFragment"
+        android:label="fragment_viber"
+        tools:layout="@layout/fragment_viber" >
+        <action
+            android:id="@+id/action_viberFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/viberFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/discordFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.socialmedia.DiscordFragment"
+        android:label="fragment_discord"
+        tools:layout="@layout/fragment_discord" >
+        <action
+            android:id="@+id/action_discordFragment_to_createdQRFragment"
+            app:destination="@id/createdQRFragment"
+            app:popUpTo="@id/discordFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/createdQRFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.dashboard.main.create.qrcreated.CreatedQRFragment"
+        android:label="CreatedQRFragment"
+        tools:layout="@layout/fragment_created_q_r">
+        <argument
+            android:name="qrData"
+            app:argType="string" />
+
+        <argument
+            android:name="qrType"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="source"
+            app:argType="string"
+            android:defaultValue="create" />
+        <action
+            android:id="@+id/action_createdQRFragment_to_styleFragment"
+            app:destination="@id/styleFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/QRScaneFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.dashboard.main.main.qrscanner.QRScaneFragment"
+        tools:layout="@layout/fragment_q_r_scane"/>
+
+    <fragment
+        android:id="@+id/QRResultFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.dashboard.main.main.qrscanner.QRResultFragment"
+        tools:layout="@layout/fragment_q_r_result">
+        <argument
+            android:name="qrResult"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/styleFragment"
+        android:name="com.example.qrcodescanner.ui.fragments.dashboard.main.style.StyleFragment"
+        android:label="StyleFragment" />
+
+
+</navigation>

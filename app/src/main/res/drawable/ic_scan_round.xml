@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="68dp"
+    android:height="68dp"
+    android:viewportWidth="68"
+    android:viewportHeight="68">
+  <path
+      android:pathData="M34,34m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="64"
+          android:startY="32"
+          android:endX="1"
+          android:endY="34"
+          android:type="linear">
+        <item android:offset="0" android:color="#FF07B872"/>
+        <item android:offset="1" android:color="#FF83D7B6"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M34,34m-34,0a34,34 0,1 1,68 0a34,34 0,1 1,-68 0"
+      android:fillColor="#0EBA77"
+      android:fillAlpha="0.18"/>
+  <path
+      android:pathData="M40.25,22.75H39C38.25,22.75 37.75,23.25 37.75,24C37.75,24.75 38.25,25.25 39,25.25H40.25C41.625,25.25 42.75,26.375 42.75,27.75V29.125C42.75,29.875 43.25,30.375 44,30.375C44.75,30.375 45.25,29.875 45.25,29.125V27.75C45.25,25 43,22.75 40.25,22.75Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M44,37.75C43.25,37.75 42.75,38.25 42.75,39V40.25C42.75,41.625 41.625,42.75 40.25,42.75H39C38.25,42.75 37.75,43.25 37.75,44C37.75,44.75 38.25,45.25 39,45.25H40.25C43,45.25 45.25,43 45.25,40.25V39C45.25,38.25 44.75,37.75 44,37.75Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M29,42.75H27.75C26.375,42.75 25.25,41.625 25.25,40.25V39C25.25,38.25 24.75,37.75 24,37.75C23.25,37.75 22.75,38.25 22.75,39V40.25C22.75,43 25,45.25 27.75,45.25H29C29.75,45.25 30.25,44.75 30.25,44C30.25,43.25 29.75,42.75 29,42.75Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M24,30.25C24.75,30.25 25.25,29.75 25.25,29V27.75C25.25,26.375 26.375,25.25 27.75,25.25H29C29.75,25.25 30.25,24.75 30.25,24C30.25,23.25 29.75,22.75 29,22.75H27.75C25,22.75 22.75,25 22.75,27.75V29C22.75,29.625 23.25,30.25 24,30.25Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M44,32.75H24C23.25,32.75 22.75,33.25 22.75,34C22.75,34.75 23.25,35.25 24,35.25H44C44.75,35.25 45.25,34.75 45.25,34C45.25,33.25 44.75,32.75 44,32.75Z"
+      android:fillColor="#ffffff"/>
+</vector>
