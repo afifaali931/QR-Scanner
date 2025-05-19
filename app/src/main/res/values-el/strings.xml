@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_blank_fragment">Γεια σου κενό απόσπασμα</string>
+    <string name="vibration">Δόνηση</string>
+    <string name="turn_on_off_mobile_vibration">Ενεργοποίηση/Απενεργοποίηση δόνησης κινητού</string>
+    <string name="others">Άλλα</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="general">Γενικά</string>
+
+    <string name="setting_vibration_title">Δόνηση</string>
+    <string name="setting_vibration_desc">Ενεργοποίηση/Απενεργοποίηση δόνησης κινητού</string>
+
+    <string name="setting_sound_title">Ήχος</string>
+    <string name="setting_sound_desc">Ενεργοποίηση/Απενεργοποίηση ήχου</string>
+
+    <string name="setting_auto_copy_title">Αυτόματη αντιγραφή στο πρόχειρο</string>
+    <string name="setting_auto_copy_desc">Ενεργοποίηση/Απενεργοποίηση αυτόματης αντιγραφής</string>
+
+    <string name="setting_auto_web_title">Αυτόματη αναζήτηση ιστού</string>
+    <string name="setting_auto_web_desc">Ενεργοποίηση/Απενεργοποίηση αυτόματης αναζήτησης</string>
+
+    <string name="setting_save_history_title">Αποθήκευση ιστορικού</string>
+    <string name="setting_save_history_desc">Ενεργοποίηση/Απενεργοποίηση αποθήκευσης ιστορικού</string>
+
+    <string name="tap_to_encourage_us">Πατήστε για να μας ενθαρρύνετε</string>
+    <string name="rate_us">Βαθμολογήστε μας</string>
+    <string name="privacy_policy">Πολιτική απορρήτου</string>
+    <string name="view_our_privacy_terms">Δείτε τους όρους απορρήτου μας</string>
+
+</resources>

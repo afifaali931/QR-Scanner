@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="vibration">Vibración</string>
+    <string name="turn_on_off_mobile_vibration">Activar/Desactivar la vibración del móvil</string>
+    <string name="others">Otros</string>
+    <string name="settings">Ajustes</string>
+    <string name="general">General</string>
+
+    <string name="setting_vibration_title">Vibración</string>
+    <string name="setting_vibration_desc">Activar/Desactivar la vibración del móvil</string>
+
+    <string name="setting_sound_title">Sonido</string>
+    <string name="setting_sound_desc">Activar/Desactivar el sonido</string>
+
+    <string name="setting_auto_copy_title">Copia automática al portapapeles</string>
+    <string name="setting_auto_copy_desc">Activar/Desactivar la copia automática</string>
+
+    <string name="setting_auto_web_title">Búsqueda web automática</string>
+    <string name="setting_auto_web_desc">Activar/Desactivar la búsqueda automática</string>
+
+    <string name="setting_save_history_title">Guardar historial</string>
+    <string name="setting_save_history_desc">Activar/Desactivar guardar historial</string>
+
+    <string name="tap_to_encourage_us">Toca para animarnos</string>
+    <string name="rate_us">Califícanos</string>
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="view_our_privacy_terms">Consulta nuestros términos de privacidad</string>
+
+</resources>

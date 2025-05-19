@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_blank_fragment">नमस्ते रिक्त खंड</string>
+    <string name="vibration">वाइब्रेशन</string>
+    <string name="turn_on_off_mobile_vibration">मोबाइल वाइब्रेशन चालू/बंद करें</string>
+    <string name="others">अन्य</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="general">सामान्य</string>
+
+    <string name="setting_vibration_title">वाइब्रेशन</string>
+    <string name="setting_vibration_desc">मोबाइल वाइब्रेशन चालू/बंद करें</string>
+
+    <string name="setting_sound_title">ध्वनि</string>
+    <string name="setting_sound_desc">ध्वनि चालू/बंद करें</string>
+
+    <string name="setting_auto_copy_title">क्लिपबोर्ड पर स्वतः कॉपी करें</string>
+    <string name="setting_auto_copy_desc">ऑटो कॉपी चालू/बंद करें</string>
+
+    <string name="setting_auto_web_title">स्वचालित वेब खोज</string>
+    <string name="setting_auto_web_desc">स्वचालित खोज चालू/बंद करें</string>
+
+    <string name="setting_save_history_title">इतिहास सहेजें</string>
+    <string name="setting_save_history_desc">इतिहास सहेजना चालू/बंद करें</string>
+
+    <string name="tap_to_encourage_us">हमें प्रोत्साहित करने के लिए टैप करें</string>
+    <string name="rate_us">हमें रेट करें</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="view_our_privacy_terms">हमारी गोपनीयता शर्तें देखें</string>
+
+</resources>

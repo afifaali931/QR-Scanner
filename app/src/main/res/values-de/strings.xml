@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_blank_fragment">Hallo leeres Fragment</string>
+    <string name="vibration">Vibration</string>
+    <string name="turn_on_off_mobile_vibration">Mobilvibration ein-/ausschalten</string>
+    <string name="others">Andere</string>
+    <string name="settings">Einstellungen</string>
+    <string name="general">Allgemein</string>
+
+    <string name="setting_vibration_title">Vibration</string>
+    <string name="setting_vibration_desc">Mobilvibration ein-/ausschalten</string>
+
+    <string name="setting_sound_title">Ton</string>
+    <string name="setting_sound_desc">Ton ein-/ausschalten</string>
+
+    <string name="setting_auto_copy_title">Automatisch in Zwischenablage kopieren</string>
+    <string name="setting_auto_copy_desc">Automatisches Kopieren ein-/ausschalten</string>
+
+    <string name="setting_auto_web_title">Automatische Websuche</string>
+    <string name="setting_auto_web_desc">Automatische Suche ein-/ausschalten</string>
+
+    <string name="setting_save_history_title">Verlauf speichern</string>
+    <string name="setting_save_history_desc">Verlauf speichern ein-/ausschalten</string>
+
+    <string name="tap_to_encourage_us">Tippen Sie, um uns zu unterstützen</string>
+    <string name="rate_us">Bewerten Sie uns</string>
+    <string name="privacy_policy">Datenschutzrichtlinie</string>
+    <string name="view_our_privacy_terms">Sehen Sie sich unsere Datenschutzbedingungen an</string>
+
+
+</resources>
