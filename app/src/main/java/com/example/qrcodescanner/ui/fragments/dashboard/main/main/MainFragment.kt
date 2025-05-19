@@ -8,21 +8,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import androidx.activity.addCallback
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
-import androidx.core.view.isVisible
-import androidx.fragment.app.viewModels
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.room.Index
-import androidx.room.util.TableInfo
 import androidx.viewpager2.widget.ViewPager2
 import com.example.qrcodescanner.R
-import com.example.qrcodescanner.data.sharedviewmodel.SharedViewModel
 import com.example.qrcodescanner.databinding.FragmentMainBinding
 import com.example.qrcodescanner.ui.adapter.ViewPagerAdapter
 import com.example.qrcodescanner.ui.fragments.dashboard.main.create.CreateFragment
@@ -33,81 +23,11 @@ import com.example.qrcodescanner.ui.fragments.dashboard.main.style.StyleFragment
 import com.example.qrcodescanner.utils.showPermissionRationaleDialog
 import com.example.qrcodescanner.utils.showScanInstructionsDialog
 
-
-//class MainFragment : Fragment() {
-//
-//    lateinit var binding: FragmentMainBinding
-//
-//    val sharedViewModel: SharedViewModel by viewModels()
-//
-//    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-//                              savedInstanceState: Bundle?): View {
-//
-//        binding = FragmentMainBinding.inflate(inflater, container, false)
-//        return  binding.root
-//    }
-//
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//
-//        binding.bottomNavigationView.background = null
-//        replaceFragment(QRScaneFragment())
-//
-//        handleFabVisibility(false)
-//
-//        binding.bottomNavigationView.setOnItemSelectedListener { item ->
-//            when (item.itemId) {
-//                R.id.create   -> findNavController().navigate(R.id.createFragment)
-//                R.id.history  -> findNavController().navigate(R.id.historyFragment)
-//                R.id.style    -> findNavController().navigate(R.id.styleFragment)
-//                R.id.settings -> findNavController().navigate(R.id.settingsFragment)
-//            }
-//            handleFabVisibility(true)
-//            true
-//        }
-//
-//        binding.fab.setOnClickListener{
-//            replaceFragment(QRScaneFragment())
-//            handleFabVisibility(false)
-//        }
-//    }
-//
-//    private fun replaceFragment(fragment: Fragment) {
-//        requireActivity().supportFragmentManager.beginTransaction()
-//            .replace(R.id.viewPager, fragment)
-//            .commit()
-//    }
-//
-//    private fun handleFabVisibility(show: Boolean){
-//        if (show){
-//
-//            binding.fab.visibility = View.VISIBLE
-//
-//        } else{
-//
-//            binding.bottomNavigationView.menu.setGroupCheckable(0, true, false)
-//            for (i in 0 until binding.bottomNavigationView.menu.size()) {
-//                binding.bottomNavigationView.menu.getItem(i).isChecked = false
-//            }
-//            binding.bottomNavigationView.menu.setGroupCheckable(0, true, true)
-//        }
-//    }
-//}
-
-
-
-
-
-
-
-
-
-
-
-
 class MainFragment : Fragment() {
 
     private lateinit var binding: FragmentMainBinding
     private lateinit var viewPagerAdapter: ViewPagerAdapter
+    private var isFirstOpen = true
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -119,6 +39,8 @@ class MainFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+
 
         checkAndRequestPermissions()
         binding.bottomNavigationView.background = null
@@ -142,7 +64,6 @@ class MainFragment : Fragment() {
         binding.fab.setOnClickListener {
             binding.viewPager.currentItem = 2
 
-            handleFabVisibility(true)
 
         }
 
@@ -155,8 +76,11 @@ class MainFragment : Fragment() {
                     binding.bottomNavigationView.menu.getItem(position).isChecked = true
                     handleFabVisibility(true)
                 } else {
-                    handleFabVisibility(false)
+                    Log.e("MainFragment", "onPageSelected:............. isFirstOpen ${isFirstOpen}", )
+
+                    handleFabVisibility(isFirstOpen)
                     deselectBottomNav()
+                    isFirstOpen = false
                 }
             }
         })
@@ -164,7 +88,15 @@ class MainFragment : Fragment() {
         binding.viewPager.setCurrentItem(2, false)
 
 
-//        findNavController().navigate(R.id.action_mainFragment_to_createFragment2)
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
+            val currentItem = binding.viewPager.currentItem
+            if (currentItem != 2) {
+                binding.viewPager.setCurrentItem(2, false)
+            } else {
+                requireActivity().finish()
+            }
+        }
+
     }
 
     private fun setupViewPager() {
@@ -182,6 +114,8 @@ class MainFragment : Fragment() {
     }
 
     private fun handleFabVisibility(show: Boolean) {
+        Log.e("MainFragment", "onPageSelected handleFabVisibility called  ${show}", )
+
         binding.fab.visibility = if (show) View.VISIBLE else View.INVISIBLE
     }
 
@@ -224,7 +158,5 @@ class MainFragment : Fragment() {
             showScanInstructionsDialog()
         }
     }
-
-
 
 }

@@ -14,34 +14,37 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <!-- App Setting Header -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="2dp"
             android:text="App Setting"
             android:textColor="@color/green_200"
-            android:textStyle="bold"
             android:textSize="14sp"
-            android:layout_marginTop="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginBottom="2dp" />
+            android:textStyle="bold" />
 
         <!-- Setting Item Template -->
         <include
-            android:id="@+id/item_setting" layout="@layout/item_settings" />
+            android:id="@+id/item_setting"
+            layout="@layout/item_settings" />
 
         <!-- Others Header -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
             android:text="Others"
             android:textColor="@color/green_200"
-            android:textStyle="bold"
             android:textSize="14sp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp" />
+            android:textStyle="bold" />
 
         <!-- Others Setting Items -->
         <include layout="@layout/item_settings" />

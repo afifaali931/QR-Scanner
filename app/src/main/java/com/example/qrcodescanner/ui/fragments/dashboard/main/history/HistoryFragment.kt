@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.qrcodescanner.R
+import com.example.qrcodescanner.data.entities.SavedQrCodeEntity
 import com.example.qrcodescanner.databinding.FragmentHistoryBinding
 import com.example.qrcodescanner.ui.adapter.savedqrcode.HistoryAdapter
 import com.example.qrcodescanner.ui.fragments.dashboard.main.main.MainFragmentDirections
@@ -84,20 +85,37 @@ class HistoryFragment : Fragment() {
     private fun observeCreatedQrCodes() {
         viewModel.createdQrCodes.observe(viewLifecycleOwner) {
             adapter.submitList(it)
+            showEmptyStateIfNeeded(it, R.drawable.no_create_history, )
+//            showEmptyStateIfNeeded(it, R.drawable.no_create_history_text)
         }
     }
 
     private fun observeScannedQrCodes() {
         viewModel.scannedQrCodes.observe(viewLifecycleOwner) {
             adapter.submitList(it)
+            showEmptyStateIfNeeded(it, R.drawable.no_scan_history)
         }
     }
 
     private fun observeBookmarkedQrCodes() {
         viewModel.bookmarkedQrCodes.observe(viewLifecycleOwner) {
             adapter.submitList(it)
+            showEmptyStateIfNeeded(it, R.drawable.no_bookmark_history)
         }
     }
+
+    private fun showEmptyStateIfNeeded(list: List<SavedQrCodeEntity>, imageResId: Int) {
+        if (list.isEmpty()) {
+            binding.emptyStateLayout.visibility = View.VISIBLE
+            binding.recyclerViewSavedQr.visibility = View.GONE
+            binding.emptyStateImage.setImageResource(imageResId)
+
+        } else {
+            binding.emptyStateLayout.visibility = View.GONE
+            binding.recyclerViewSavedQr.visibility = View.VISIBLE
+        }
+    }
+
 
     private fun highlightSelectedButton(selectedButton: Button) {
         val buttons = listOf(binding.btnCreate, binding.btnScan, binding.btnBookmark)
@@ -111,70 +129,3 @@ class HistoryFragment : Fragment() {
 
 
 
-
-
-
-
-//class HistoryFragment : Fragment() {
-//
-//    private lateinit var binding: FragmentHistoryBinding
-//    private val qrCodeViewModel: QrCodeViewModel by viewModel()
-//    private lateinit var adapter: HistoryAdapter
-//
-//    override fun onCreateView(
-//        inflater: LayoutInflater, container: ViewGroup?,
-//        savedInstanceState: Bundle?
-//    ): View {
-//        binding = FragmentHistoryBinding.inflate(inflater, container, false)
-//        return binding.root
-//    }
-//
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//
-//        binding.recyclerViewSavedQr.layoutManager = GridLayoutManager(requireContext(), 3)
-//        adapter = HistoryAdapter()
-//
-//        binding.btnCreate.setOnClickListener {
-//            highlightSelectedButton(binding.btnCreate)
-//            observeCreatedQrCodes()
-//        }
-//
-//        binding.btnScan.setOnClickListener {
-//            highlightSelectedButton(binding.btnScan)
-//            observeScannedQrCodes()
-//        }
-//
-//        binding.btnBookmark.setOnClickListener {
-//            highlightSelectedButton(binding.btnBookmark)
-//            observeBookmarkedQrCodes()
-//        }
-//    }
-//
-//    private fun observeCreatedQrCodes() {
-//        viewModel.createdQrCodes.observe(viewLifecycleOwner) {
-//            adapter.submitList(it)
-//        }
-//    }
-//    private fun observeScannedQrCodes() {
-//        viewModel.scannedQrCodes.observe(viewLifecycleOwner) {
-//            adapter.submitList(it)
-//        }
-//    }
-//
-//    private fun observeBookmarkedQrCodes() {
-//        viewModel.bookmarkedQrCodes.observe(viewLifecycleOwner) {
-//            adapter.submitList(it)
-//        }
-//    }
-//
-//    private fun highlightSelectedButton(selectedButton: Button) {
-//        val buttons = listOf(binding.btnCreate, binding.btnScan, binding.btnBookmark)
-//
-//        buttons.forEach { button ->
-//            val colorRes = if (button == selectedButton) R.color.green_200 else R.color.gray
-//            button.setBackgroundColor(ContextCompat.getColor(requireContext(), colorRes))
-//        }
-//    }
-//
-//}

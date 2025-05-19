@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@color/white">
+    android:background="@color/light_gray">
 
     <!-- Title Bar -->
 
@@ -59,4 +59,21 @@
         android:clipToPadding="false"
         android:paddingBottom="80dp"
         app:spanCount="3" />
+
+    <!-- Add this just below your RecyclerView in fragment_history.xml -->
+    <LinearLayout
+        android:id="@+id/emptyStateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/emptyStateImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+    </LinearLayout>
+
 </LinearLayout>
