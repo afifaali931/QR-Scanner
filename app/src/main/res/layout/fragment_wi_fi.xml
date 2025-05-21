@@ -41,7 +41,7 @@
             android:id="@+id/etNetworkName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Network Name"
+            android:hint="@string/network_name"
             android:paddingStart="49dp"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -66,7 +66,7 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:paddingStart="47dp"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -77,17 +77,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="452dp"
         android:layout_marginEnd="16dp"
         android:alpha="0.5"
         android:backgroundTint="@color/green_200"
         android:enabled="false"
-        android:text="CREATE"
+        android:text="@string/_wifi"
         android:textAllCaps="true"
+        android:textColor="@color/white"
         app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tilPassword" />
+        app:layout_constraintTop_toBottomOf="@id/tilPassword"
+        app:layout_constraintVertical_bias="0.989" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

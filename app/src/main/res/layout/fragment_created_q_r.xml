@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Email"
+                android:text="@string/email"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@id/imgTypeIcon"
@@ -73,7 +73,7 @@
                 android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dec 20, 2023"
+                android:text="@string/dec_20_2023"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@id/tvQrType"
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:padding="16dp"
-                android:text="Mail: muazz9dtech@gmail.com\nSubject: confidential\nBody: Lorem ipsum..."
+                android:text="@string/mail_muazz9dtech_gmail_com_nsubject_confidential_nbody_lorem_ipsum"
                 android:textSize="14sp"
                 android:maxLines="3"
                 android:ellipsize="end"
@@ -113,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="3dp"
-                android:text="See More"
+                android:text="@string/see_more"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -166,7 +166,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Save"
+                        android:text="@string/save"
                         android:textSize="12sp"/>
                 </LinearLayout>
 
@@ -188,7 +188,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Style"
+                        android:text="@string/style"
                         android:textSize="12sp"/>
                 </LinearLayout>
 
@@ -210,7 +210,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Share"
+                        android:text="@string/share"
                         android:textSize="12sp"/>
                 </LinearLayout>
 
@@ -232,7 +232,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Print"
+                        android:text="@string/print"
                         android:textSize="12sp"/>
                 </LinearLayout>
             </LinearLayout>

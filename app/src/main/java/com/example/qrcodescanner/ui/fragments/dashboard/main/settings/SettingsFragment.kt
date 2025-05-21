@@ -152,9 +152,9 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
         AlertDialog.Builder(requireContext())
             .setTitle(getString(R.string.choose_language))
-            .setItems(languages) { _, which ->
-                languageTextView.text = languages[which]
-                setAppLocale(languageCodes[which])
+            .setItems(languages) { _, index ->
+                languageTextView.text = languages[index]
+                setAppLocale(languageCodes[index])
             }
             .show()
     }

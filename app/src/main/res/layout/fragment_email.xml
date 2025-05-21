@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="48dp"
-            android:hint="Email"
+            android:hint="@string/email_address"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -65,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="45dp"
-            android:hint=" Subject"
+            android:hint="@string/subject"
             android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:gravity="top"
-            android:hint="Please enter content..."
+            android:hint="@string/enter_your_content_here"
             android:inputType="text"
             android:maxLength="500" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -101,21 +101,22 @@
         android:id="@+id/btnCreate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/green_200"
-        android:text="CREATE"
-        android:textAllCaps="true"
-        android:enabled="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:alpha="0.5"
+        android:backgroundTint="@color/green_200"
         android:drawableStart="@drawable/ic_scan_round"
+        android:enabled="false"
+        android:text="@string/create_email"
+        android:textAllCaps="true"
         android:textColor="@android:color/white"
         app:cornerRadius="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-      />
+        app:layout_constraintTop_toBottomOf="@+id/messageInputLayout"
+        app:layout_constraintVertical_bias="0.977" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

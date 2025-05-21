@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="QR Creator"
+        android:text="@string/qr_creator_history"
         android:textSize="40sp"
         android:textStyle="bold" />
 
@@ -30,21 +30,21 @@
             android:id="@+id/btnScan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scan"
+            android:text="@string/scan"
             android:layout_marginEnd="8dp" />
 
         <Button
             android:id="@+id/btnCreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create"
+            android:text="@string/create_hitory"
             android:layout_marginEnd="8dp" />
 
         <Button
             android:id="@+id/btnBookmark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bookmark"
+            android:text="@string/bookmark"
             android:backgroundTint="@color/green_200"
             android:textColor="@android:color/white" />
     </LinearLayout>

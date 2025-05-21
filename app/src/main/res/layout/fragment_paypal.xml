@@ -28,7 +28,7 @@
         android:layout_margin="16dp"
         android:backgroundTint="@color/green_200"
         android:padding="12dp"
-        android:text="CREATE"
+        android:text="@string/create_paypal"
         android:alpha="0.5"
         android:enabled="false"
         android:textColor="@android:color/white"
@@ -54,7 +54,7 @@
             android:id="@+id/etPaypal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Paypal Link"
+            android:hint="@string/paypal_link"
             android:inputType="textWebEditText" />
     </com.google.android.material.textfield.TextInputLayout>
 

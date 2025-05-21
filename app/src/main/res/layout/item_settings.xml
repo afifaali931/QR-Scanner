@@ -16,7 +16,7 @@
             android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="QR Creator"
+            android:text="@string/qr_creator_settings"
             android:textSize="32sp"
             android:textStyle="bold"
             android:layout_marginStart="8dp"
@@ -58,7 +58,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Language"
+                    android:text="@string/language"
                     android:textStyle="bold"
                     android:paddingStart="3dp"
                     android:drawableStart="@drawable/ic_language"
@@ -69,7 +69,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="English"
+                    android:text="@string/english"
                     android:textColor="@color/white" />
 
                 <ImageView

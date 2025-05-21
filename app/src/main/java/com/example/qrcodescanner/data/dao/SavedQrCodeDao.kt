@@ -6,6 +6,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
+import com.example.qrcodescanner.data.entities.QRCodeEntity
 import com.example.qrcodescanner.data.entities.SavedQrCodeEntity
 import kotlinx.coroutines.flow.Flow
 
@@ -28,5 +29,9 @@ interface SavedQrCodeDao {
     @Delete
     suspend fun deleteQrCode(qrCode: SavedQrCodeEntity)
 
+
+
+//    @Query("SELECT * FROM new_qr_code")
+//    fun getAllNewData(): Flow<List<QRCodeEntity>>
 
 }

@@ -14,3 +14,11 @@ data class SavedQrCodeEntity(
     val isBookmarked: Boolean,
     val generatedQrType: Int
 )
+
+@Entity(tableName = "new_qr_code")
+
+data class QRCodeEntity(
+    @PrimaryKey(autoGenerate = true)val id: Int = 0,
+    val name: String,
+    val  age: Int
+)

@@ -107,6 +107,10 @@ dependencies {
     // File Provider (if needed for sharing images)
     implementation ("androidx.core:core-ktx:1.13.1")
 
+
+    implementation ("com.github.alexzhirkevich:custom-qr-generator:2.0.0-alpha01")
+
+
     /* // --- Room (Database, DAO, Coroutine support)
      implementation ("androidx.room:room-runtime:2.6.1")
      kapt ("androidx.room:room-compiler:2.6.1")

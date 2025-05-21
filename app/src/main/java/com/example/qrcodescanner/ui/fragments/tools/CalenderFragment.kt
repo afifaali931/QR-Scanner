@@ -86,9 +86,9 @@ class CalenderFragment : Fragment() {
         private fun showDatePickerDialog(onDateSelected: (String) -> Unit) {
             val calendar = Calendar.getInstance()
             val year = calendar.get(Calendar.YEAR)
+
             val month = calendar.get(Calendar.MONTH)
             val day = calendar.get(Calendar.DAY_OF_MONTH)
-
             val datePicker = DatePickerDialog(requireContext(), { _, y, m, d ->
                 val selectedDate = String.format("%02d/%02d/%04d", d, m + 1, y)
                 onDateSelected(selectedDate)

@@ -28,7 +28,7 @@
         android:layout_margin="16dp"
         android:backgroundTint="@color/green_200"
         android:padding="12dp"
-        android:text="CREATE"
+        android:text="@string/create_spotify"
         android:alpha="0.5"
         android:enabled="false"
         android:textColor="@android:color/white"
@@ -52,7 +52,7 @@
             android:id="@+id/etSpotify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Spotify URL"
+            android:hint="@string/spotify_url"
             android:inputType="textWebEditText" />
     </com.google.android.material.textfield.TextInputLayout>
 

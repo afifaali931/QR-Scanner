@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/create"
-        android:title="Create"
+        android:title="@string/create_botton_nav"
         android:icon="@drawable/baseline_create_24"/>
 
     <item
         android:id="@+id/history"
-        android:title="History"
+        android:title="@string/history_botton_nav"
         android:icon="@drawable/baseline_history_24"/>
 
     <item
@@ -18,11 +18,11 @@
 
     <item
         android:id="@+id/style"
-        android:title="Style"
+        android:title="@string/style_botton_nav"
         android:icon="@drawable/baseline_style_24"/>
     <item
         android:id="@+id/settings"
-        android:title="Settings"
+        android:title="@string/settings_botton_nav"
         android:icon="@drawable/baseline_settings_24"/>
 
 </menu>

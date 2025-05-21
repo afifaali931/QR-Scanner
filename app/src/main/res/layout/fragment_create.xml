@@ -12,7 +12,7 @@
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="QR Creator"
+        android:text="@string/qr_creator_create"
         android:textSize="40sp"
         android:textStyle="bold"
         android:layout_marginBottom="20dp"/>
@@ -27,14 +27,14 @@
             android:id="@+id/btnTools"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tools"
+            android:text="@string/tools"
             android:backgroundTint="@color/green_200"
             android:textColor="@android:color/white"/>
         <Button
             android:id="@+id/btnSocial"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Social Media"
+            android:text="@string/social_media"
             android:layout_marginStart="12dp"
             android:backgroundTint="@color/gray"
             android:textColor="@color/white"/>

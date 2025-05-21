@@ -27,4 +27,133 @@
     <string name="privacy_policy">गोपनीयता नीति</string>
     <string name="view_our_privacy_terms">हमारी गोपनीयता शर्तें देखें</string>
 
+    <string name="scan_icon">स्कैन आइकन</string>
+    <string name="scanning_tips">स्कैनिंग युक्तियाँ</string>
+    <string name="avoid_strong_light_or_shadows_n_hold_your_phone_steady_n_don_t_tilt_or_rotate">• तेज रोशनी या छाया से बचें\n• फोन स्थिर रखें\n• झुकाएं या घुमाएं नहीं</string>
+    <string name="got_it">समझ गया</string>
+    <string name="title_name">शीर्षक नाम</string>
+    <string name="start_date_time">प्रारंभ दिनांक/समय</string>
+    <string name="end_date_time">समाप्ति दिनांक/समय</string>
+    <string name="please_enter_content">कृपया सामग्री दर्ज करें</string>
+    <string name="create">बनाएं</string>
+    <string name="phone_number">फोन नंबर</string>
+    <string name="enter_your_content">अपनी सामग्री दर्ज करें</string>
+    <string name="name">नाम</string>
+    <string name="enter_phone_number">फोन नंबर दर्ज करें</string>
+    <string name="tools">उपकरण</string>
+    <string name="social_media">सोशल मीडिया</string>
+    <string name="email">ईमेल</string>
+    <string name="dec_20_2023">20 दिसंबर 2023</string>
+    <string name="mail_muazz9dtech_gmail_com_nsubject_confidential_nbody_lorem_ipsum">मेल: muazz9dtech@gmail.com\nविषय: गोपनीय\nसंदेश: Lorem ipsum...</string>
+    <string name="see_more">और देखें</string>
+    <string name="save">सहेजें</string>
+    <string name="style">स्टाइल</string>
+    <string name="share">साझा करें</string>
+    <string name="print">प्रिंट करें</string>
+    <string name="url">यूआरएल</string>
+    <string name="email_address">ईमेल पता</string>
+    <string name="subject">विषय</string>
+    <string name="enter_your_content_here">यहां अपनी सामग्री दर्ज करें...</string>
+    <string name="facebook_url">फेसबुक यूआरएल</string>
+    <string name="gps">जीपीएस</string>
+    <string name="scan">स्कैन करें</string>
+    <string name="bookmark">बुकमार्क</string>
+    <string name="instagram_url">इंस्टाग्राम यूआरएल</string>
+    <string name="product_code">उत्पाद कोड</string>
+    <string name="my_name">मेरा नाम</string>
+    <string name="cell_number">मोबाइल नंबर</string>
+    <string name="address">पता</string>
+    <string name="birthday">जन्मदिन</string>
+    <string name="organization">संगठन</string>
+    <string name="paypal_link">पेपल लिंक</string>
+    <string name="scanned_qr_code">स्कैन किया गया QR कोड</string>
+    <string name="qr_code_scanner">QR कोड स्कैनर</string>
+    <string name="title">शीर्षक</string>
+    <string name="subtitle">उपशीर्षक</string>
+    <string name="enter_your_text_content">अपना टेक्स्ट सामग्री दर्ज करें</string>
+    <string name="tiktok_url">टिकटॉक यूआरएल</string>
+    <string name="spotify_url">स्पॉटिफाई यूआरएल</string>
+    <string name="twitter_url">ट्विटर यूआरएल</string>
+    <string name="_92">+92</string>
+    <string name="http">http://</string>
+    <string name="https">https://</string>
+    <string name="www">www.</string>
+    <string name="com">.com</string>
+    <string name="_923">+92</string>
+    <string name="network_name">नेटवर्क नाम</string>
+    <string name="password">पासवर्ड</string>
+    <string name="youtube_url">यूट्यूब यूआरएल</string>
+    <string name="label">लेबल</string>
+
+
+    <string name="email_two">ईमेल</string>
+    <string name="website">वेबसाइट</string>
+    <string name="wifi">वाई-फ़ाई</string>
+    <string name="contact">संपर्क</string>
+    <string name="cell_phone">मोबाइल फोन</string>
+    <string name="sms">एसएमएस</string>
+    <string name="my_card">मेरा कार्ड</string>
+    <string name="calendar">कैलेंडर</string>
+    <string name="gps_two">जीपीएस</string>
+    <string name="clipboard">क्लिपबोर्ड</string>
+    <string name="text">पाठ</string>
+    <string name="item_code">आइटम कोड</string>
+
+    <!-- Social -->
+    <string name="facebook">फेसबुक</string>
+    <string name="youtube">यूट्यूब</string>
+    <string name="whatsapp">व्हाट्सएप</string>
+    <string name="paypal">पेपल</string>
+    <string name="twitter">ट्विटर</string>
+    <string name="instagram">इंस्टाग्राम</string>
+    <string name="spotify">स्पॉटिफाई</string>
+    <string name="tiktok">टिकटॉक</string>
+    <string name="viber">वाइबर</string>
+    <string name="discord">डिस्कॉर्ड</string>
+
+    <string name="_youtube">बनाएं</string>
+    <string name="_wifi">बनाएं</string>
+    <string name="create_whatsapp">बनाएं</string>
+    <string name="create_website">बनाएं</string>
+    <string name="create_viber">बनाएं</string>
+    <string name="create_twitter">बनाएं</string>
+    <string name="create_tiktok">बनाएं</string>
+    <string name="create_text">बनाएं</string>
+    <string name="qr_creator_style">क्यूआर निर्माता</string>
+    <string name="create_spotify">बनाएं</string>
+    <string name="app_setting">ऐप सेटिंग</string>
+    <string name="others_new">अन्य</string>
+    <string name="phone_no">फ़ोन नंबर</string>
+    <string name="please_enter_your_message">कृपया अपना संदेश दर्ज करें</string>
+    <string name="create_sms">बनाएं</string>
+    <string name="saveqrscaned">सहेजें</string>
+    <string name="share_qrscanned">साझा करें</string>
+    <string name="result_goes_here">परिणाम यहाँ दिखेगा</string>
+    <string name="create_paypal">बनाएं</string>
+    <string name="please_enter_content_card">कृपया सामग्री दर्ज करें</string>
+    <string name="email_address_card">ईमेल पता</string>
+    <string name="create_product">बनाएं</string>
+    <string name="create_insta">बनाएं</string>
+    <string name="create_hitory">बनाएं</string>
+    <string name="qr_creator_history">क्यूआर निर्माता</string>
+    <string name="create_gps">बनाएं</string>
+    <string name="create_fb">बनाएं</string>
+    <string name="create_email">बनाएं</string>
+    <string name="create_discord">बनाएं</string>
+    <string name="qr_creator_create">क्यूआर निर्माता</string>
+    <string name="create_contact">बनाएं</string>
+    <string name="create_clipboard">बनाएं</string>
+    <string name="create_cell">बनाएं</string>
+    <string name="qr_creator_settings">क्यूआर क्रिएटर</string>
+
+
+    <string name="create_botton_nav">बनाएं</string>
+    <string name="history_botton_nav">इतिहास</string>
+    <string name="style_botton_nav">शैली</string>
+    <string name="settings_botton_nav">सेटिंग्स</string>
+    <string name="language">भाषा</string>
+    <string name="english">अंग्रेज़ी</string>
+
+
+
 </resources>

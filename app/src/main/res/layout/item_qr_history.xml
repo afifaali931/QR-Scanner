@@ -33,7 +33,7 @@
                 android:id="@+id/tvQrTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Title"
+                android:text="@string/title"
                 android:textColor="@android:color/black"
                 android:textStyle="bold"
                 android:textSize="16sp" />
@@ -42,7 +42,7 @@
                 android:id="@+id/tvQrSubtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Subtitle"
+                android:text="@string/subtitle"
                 android:textColor="#666666"
                 android:textSize="14sp"
                 android:maxLines="1"

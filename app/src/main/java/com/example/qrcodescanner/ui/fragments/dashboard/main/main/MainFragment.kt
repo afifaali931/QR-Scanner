@@ -40,8 +40,6 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-
-
         checkAndRequestPermissions()
         binding.bottomNavigationView.background = null
         setupViewPager()

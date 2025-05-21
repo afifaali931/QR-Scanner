@@ -33,7 +33,7 @@
             android:id="@+id/etContactName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="@string/name"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,7 +52,7 @@
             android:id="@+id/etContactNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone Number"
+            android:hint="@string/enter_phone_number"
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,16 +61,18 @@
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="440dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/green_200"
-        android:text="CREATE"
+
         android:alpha="0.5"
+        android:backgroundTint="@color/green_200"
         android:enabled="false"
+        android:text="@string/create_contact"
         android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/phoneInputLayout" />
+        app:layout_constraintTop_toBottomOf="@id/phoneInputLayout"
+        app:layout_constraintVertical_bias="0.964" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

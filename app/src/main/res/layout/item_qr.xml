@@ -31,7 +31,7 @@
             android:id="@+id/labelText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Label"
+            android:text="@string/label"
             android:textSize="14sp"
             android:textColor="@android:color/black"
             app:layout_constraintTop_toBottomOf="@id/iconImage"

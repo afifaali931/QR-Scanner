@@ -35,33 +35,38 @@ class CreateFragment : Fragment() {
     private val navController by lazy {
         Navigation.findNavController(requireActivity(), R.id.nav_host_fragment)
     }
+    private val toolsList by lazy {
+        listOf(
+            QRItem(getString(R.string.email), R.drawable.ic_email),
+            QRItem(getString(R.string.website), R.drawable.ic_itemcode),
+            QRItem(getString(R.string.wifi), R.drawable.ic_wifi),
+            QRItem(getString(R.string.contact), R.drawable.ic_contact),
+            QRItem(getString(R.string.cell_phone), R.drawable.ic_cellphone),
+            QRItem(getString(R.string.sms), R.drawable.ic_sms),
+            QRItem(getString(R.string.my_card), R.drawable.ic_mycard),
+            QRItem(getString(R.string.calendar), R.drawable.ic_calendar),
+            QRItem(getString(R.string.gps), R.drawable.ic_whatsapp),
+            QRItem(getString(R.string.clipboard), R.drawable.ic_clipboard),
+            QRItem(getString(R.string.text), R.drawable.ic_text),
+            QRItem(getString(R.string.item_code), R.drawable.ic_itemcode)
+        )
+    }
 
-    private val toolsList = listOf(
-        QRItem("Email", R.drawable.ic_email),
-        QRItem("Website", R.drawable.ic_itemcode),
-        QRItem("Wi-Fi", R.drawable.ic_wifi),
-        QRItem("Contact", R.drawable.ic_contact),
-        QRItem("Cell Phone", R.drawable.ic_cellphone),
-        QRItem("SMS", R.drawable.ic_sms),
-        QRItem("My Card", R.drawable.ic_mycard),
-        QRItem("Calendar", R.drawable.ic_calendar),
-        QRItem("GPS", R.drawable.ic_whatsapp),
-        QRItem("Clipboard", R.drawable.ic_clipboard),
-        QRItem("Text", R.drawable.ic_text),
-        QRItem("Item Code", R.drawable.ic_itemcode)
-    )
-    private val socialList = listOf(
-        QRItem("Facebook", R.drawable.ic_facebook),
-        QRItem("Youtube", R.drawable.ic_youtube),
-        QRItem("Whatsapp", R.drawable.ic_whatsapp),
-        QRItem("Paypal", R.drawable.ic_paypal),
-        QRItem("Twitter", R.drawable.ic_twitter),
-        QRItem("Instagram", R.drawable.ic_instagram),
-        QRItem("Spotify", R.drawable.ic_spotify),
-        QRItem("Tiktok", R.drawable.ic_tiktok),
-        QRItem("Viber", R.drawable.ic_viber),
-        QRItem("Discord", R.drawable.ic_discord)
-    )
+    private val socialList by lazy {
+        listOf(
+            QRItem(getString(R.string.facebook), R.drawable.ic_facebook),
+            QRItem(getString(R.string.youtube), R.drawable.ic_youtube),
+            QRItem(getString(R.string.whatsapp), R.drawable.ic_whatsapp),
+            QRItem(getString(R.string.paypal), R.drawable.ic_paypal),
+            QRItem(getString(R.string.twitter), R.drawable.ic_twitter),
+            QRItem(getString(R.string.instagram), R.drawable.ic_instagram),
+            QRItem(getString(R.string.spotify), R.drawable.ic_spotify),
+            QRItem(getString(R.string.tiktok), R.drawable.ic_tiktok),
+            QRItem(getString(R.string.viber), R.drawable.ic_viber),
+            QRItem(getString(R.string.discord), R.drawable.ic_discord)
+        )
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -130,13 +135,13 @@ class CreateFragment : Fragment() {
 
 
             "Facebook" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_facebookFragment)
-            "Youtube" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_youtubeFragment)
-            "Whatsapp" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_whatsappFragment)
+            "YouTube" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_youtubeFragment)
+            "WhatsApp" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_whatsappFragment)
             "Paypal" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_paypalFragment)
             "Twitter" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_twitterFragment)
             "Instagram" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_instagramFragment)
             "Spotify" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_spotifyFragment)
-            "Tiktok" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_tiktokFragment)
+            "TikTok" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_tiktokFragment)
             "Viber" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_viberFragment)
             "Discord" -> parentFragment?.findNavController()?.navigate(R.id.action_mainFragment_to_discordFragment)
 

@@ -25,19 +25,20 @@
         android:id="@+id/btnCreate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:alpha="0.5"
         android:backgroundTint="@color/green_200"
         android:enabled="false"
         android:padding="12dp"
-        android:text="CREATE"
+        android:text="@string/create_website"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnWww"
-        app:layout_constraintVertical_bias="0.966" />
+        app:layout_constraintVertical_bias="0.995" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/websiteInputLayout"
@@ -54,7 +55,7 @@
             android:id="@+id/etWebsite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="http://"
+            android:hint="@string/http"
             android:inputType="textWebEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -66,7 +67,7 @@
         android:layout_margin="16dp"
         android:backgroundTint="@color/white"
         android:padding="10dp"
-        android:hint="https://"
+        android:hint="@string/https"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btnWebsite"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +83,7 @@
         android:layout_margin="16dp"
         android:backgroundTint="@color/white"
         android:padding="10dp"
-        android:hint="www."
+        android:hint="@string/www"
         app:layout_constraintBottom_toTopOf="@+id/btnWebsite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -97,7 +98,7 @@
         android:layout_margin="16dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/white"
-        android:hint=".com"
+        android:hint="@string/com"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/btnWebsite"
         app:layout_constraintEnd_toEndOf="parent"

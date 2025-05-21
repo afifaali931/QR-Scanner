@@ -88,7 +88,7 @@ class ContactFragment : Fragment() {
 
             val action = ContactFragmentDirections.actionContactFragmentToCreatedQRFragment(
                 qrData = contactData,
-                qrType = "SMS"
+                qrType = "Contact"
             )
             findNavController().navigate(action)
         }

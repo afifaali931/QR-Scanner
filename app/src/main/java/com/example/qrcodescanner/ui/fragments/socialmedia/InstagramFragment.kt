@@ -57,7 +57,7 @@ class InstagramFragment : Fragment() {
         validateForm()
     }
     private fun isValidInstagramUrl(url: String): Boolean {
-        val regex = Regex("^(https?://)?(www\\.)?(instagram\\.com|intagr\\.am)/.+$")
+        val regex = Regex("^(https?://)?(www\\.)?(instagram\\.com)/.+$")
         return regex.matches(url.trim())
     }
 

@@ -28,4 +28,134 @@
     <string name="privacy_policy">Política de privacidad</string>
     <string name="view_our_privacy_terms">Consulta nuestros términos de privacidad</string>
 
+
+        <string name="scan_icon">Icono de escaneo</string>
+        <string name="scanning_tips">Consejos de escaneo</string>
+        <string name="avoid_strong_light_or_shadows_n_hold_your_phone_steady_n_don_t_tilt_or_rotate">• Evita luz fuerte o sombras\n• Mantén tu teléfono firme\n• No inclines ni gires</string>
+        <string name="got_it">Entendido</string>
+        <string name="title_name">Nombre del título</string>
+        <string name="start_date_time">Fecha/hora de inicio</string>
+        <string name="end_date_time">Fecha/hora de finalización</string>
+        <string name="please_enter_content">Por favor, introduce contenido</string>
+        <string name="create">CREAR</string>
+        <string name="phone_number">Número de teléfono</string>
+        <string name="enter_your_content">Introduce tu contenido</string>
+        <string name="name">Nombre</string>
+        <string name="enter_phone_number">Introduce número de teléfono</string>
+        <string name="tools">Herramientas</string>
+        <string name="social_media">Redes sociales</string>
+        <string name="email">Correo electrónico</string>
+        <string name="dec_20_2023">20 de diciembre de 2023</string>
+        <string name="mail_muazz9dtech_gmail_com_nsubject_confidential_nbody_lorem_ipsum">Correo: muazz9dtech@gmail.com\nAsunto: confidencial\nCuerpo: Lorem ipsum...</string>
+        <string name="see_more">Ver más</string>
+        <string name="save">Guardar</string>
+        <string name="style">Estilo</string>
+        <string name="share">Compartir</string>
+        <string name="print">Imprimir</string>
+        <string name="url">URL</string>
+        <string name="email_address">Dirección de correo</string>
+        <string name="subject">Asunto</string>
+        <string name="enter_your_content_here">Introduce tu contenido aquí...</string>
+        <string name="facebook_url">URL de Facebook</string>
+        <string name="gps">GPS</string>
+        <string name="scan">Escanear</string>
+        <string name="bookmark">Marcador</string>
+        <string name="instagram_url">URL de Instagram</string>
+        <string name="product_code">Código de producto</string>
+        <string name="my_name">Mi nombre</string>
+        <string name="cell_number">Número de celular</string>
+        <string name="address">Dirección</string>
+        <string name="birthday">Cumpleaños</string>
+        <string name="organization">Organización</string>
+        <string name="paypal_link">Enlace de PayPal</string>
+        <string name="scanned_qr_code">Código QR escaneado</string>
+        <string name="qr_code_scanner">ESCÁNER DE CÓDIGO QR</string>
+        <string name="title">Título</string>
+        <string name="subtitle">Subtítulo</string>
+        <string name="enter_your_text_content">Introduce tu contenido de texto</string>
+        <string name="tiktok_url">URL de TikTok</string>
+        <string name="spotify_url">URL de Spotify</string>
+        <string name="twitter_url">URL de Twitter</string>
+        <string name="_92">+92</string>
+        <string name="http">http://</string>
+        <string name="https">https://</string>
+        <string name="www">www.</string>
+        <string name="com">.com</string>
+        <string name="_923">+92</string>
+        <string name="network_name">Nombre de la red</string>
+        <string name="password">Contraseña</string>
+        <string name="youtube_url">URL de YouTube</string>
+        <string name="label">Etiqueta</string>
+
+    <!-- Example Spanish translations -->
+    <string name="email_two">Correo electrónico</string>
+    <string name="website">Sitio web</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="contact">Contacto</string>
+    <string name="cell_phone">Teléfono celular</string>
+    <string name="sms">SMS</string>
+    <string name="my_card">Mi tarjeta</string>
+    <string name="calendar">Calendario</string>
+    <string name="gps_two">GPS</string>
+    <string name="clipboard">Portapapeles</string>
+    <string name="text">Texto</string>
+    <string name="item_code">Código de artículo</string>
+
+    <!-- Social -->
+    <string name="facebook">Facebook</string>
+    <string name="youtube">YouTube</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="paypal">PayPal</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="spotify">Spotify</string>
+    <string name="tiktok">TikTok</string>
+    <string name="viber">Viber</string>
+    <string name="discord">Discord</string>
+
+    <string name="_youtube">CREAR</string>
+    <string name="_wifi">CREAR</string>
+    <string name="create_whatsapp">CREAR</string>
+    <string name="create_website">CREAR</string>
+    <string name="create_viber">CREAR</string>
+    <string name="create_twitter">CREAR</string>
+    <string name="create_tiktok">CREAR</string>
+    <string name="create_text">CREAR</string>
+    <string name="qr_creator_style">Creador de QR</string>
+    <string name="create_spotify">CREAR</string>
+    <string name="app_setting">Configuración de la App</string>
+    <string name="others_new">Otros</string>
+    <string name="phone_no">Número de teléfono</string>
+    <string name="please_enter_your_message">Por favor, ingrese su mensaje</string>
+    <string name="create_sms">CREAR</string>
+    <string name="saveqrscaned">Guardar</string>
+    <string name="share_qrscanned">Compartir</string>
+    <string name="result_goes_here">Resultado aparece aquí</string>
+    <string name="create_paypal">CREAR</string>
+    <string name="please_enter_content_card">Por favor, ingrese el contenido</string>
+    <string name="email_address_card">Dirección de correo electrónico</string>
+    <string name="create_product">CREAR</string>
+    <string name="create_insta">CREAR</string>
+    <string name="create_hitory">Crear</string>
+    <string name="qr_creator_history">Creador de QR</string>
+    <string name="create_gps">CREAR</string>
+    <string name="create_fb">CREAR</string>
+    <string name="create_email">CREAR</string>
+    <string name="create_discord">CREAR</string>
+    <string name="qr_creator_create">Creador de QR</string>
+    <string name="create_contact">CREAR</string>
+    <string name="create_clipboard">CREAR</string>
+    <string name="create_cell">CREAR</string>
+    <string name="qr_creator_settings">Creador de QR</string>
+
+    <string name="create_botton_nav">Crear</string>
+    <string name="history_botton_nav">Historial</string>
+    <string name="style_botton_nav">Estilo</string>
+    <string name="settings_botton_nav">Ajustes</string>
+    <string name="language">Idioma</string>
+    <string name="english">Inglés</string>
+
+
+
+
 </resources>

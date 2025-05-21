@@ -28,4 +28,135 @@
     <string name="privacy_policy">Πολιτική απορρήτου</string>
     <string name="view_our_privacy_terms">Δείτε τους όρους απορρήτου μας</string>
 
+    <string name="scan_icon">Εικονίδιο Σάρωσης</string>
+    <string name="scanning_tips">Συμβουλές Σάρωσης</string>
+    <string name="avoid_strong_light_or_shadows_n_hold_your_phone_steady_n_don_t_tilt_or_rotate">• Αποφύγετε έντονο φως ή σκιές\n• Κρατήστε το τηλέφωνο σταθερό\n• Μην γέρνετε ή περιστρέφετε</string>
+    <string name="got_it">Κατάλαβα</string>
+    <string name="title_name">Όνομα Τίτλου</string>
+    <string name="start_date_time">Ημερομηνία/Ώρα Έναρξης</string>
+    <string name="end_date_time">Ημερομηνία/Ώρα Λήξης</string>
+    <string name="please_enter_content">Παρακαλώ εισάγετε περιεχόμενο</string>
+    <string name="create">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="phone_number">Αριθμός Τηλεφώνου</string>
+    <string name="enter_your_content">Εισάγετε το περιεχόμενό σας</string>
+    <string name="name">Όνομα</string>
+    <string name="enter_phone_number">Εισάγετε αριθμό τηλεφώνου</string>
+    <string name="tools">Εργαλεία</string>
+    <string name="social_media">Μέσα Κοινωνικής Δικτύωσης</string>
+    <string name="email">Email</string>
+    <string name="dec_20_2023">20 Δεκ 2023</string>
+    <string name="mail_muazz9dtech_gmail_com_nsubject_confidential_nbody_lorem_ipsum">Email: muazz9dtech@gmail.com\nΘέμα: εμπιστευτικό\nΚείμενο: Lorem ipsum...</string>
+    <string name="see_more">Δείτε Περισσότερα</string>
+    <string name="save">Αποθήκευση</string>
+    <string name="style">Στυλ</string>
+    <string name="share">Κοινοποίηση</string>
+    <string name="print">Εκτύπωση</string>
+    <string name="url">URL</string>
+    <string name="email_address">Διεύθυνση Email</string>
+    <string name="subject">Θέμα</string>
+    <string name="enter_your_content_here">Εισάγετε το περιεχόμενό σας εδώ...</string>
+    <string name="facebook_url">Facebook URL</string>
+    <string name="gps">GPS</string>
+    <string name="scan">Σάρωση</string>
+    <string name="bookmark">Σελιδοδείκτης</string>
+    <string name="instagram_url">Instagram URL</string>
+    <string name="product_code">Κωδικός Προϊόντος</string>
+    <string name="my_name">Το Όνομά Μου</string>
+    <string name="cell_number">Αριθμός Κινητού</string>
+    <string name="address">Διεύθυνση</string>
+    <string name="birthday">Ημερομηνία Γέννησης</string>
+    <string name="organization">Οργανισμός</string>
+    <string name="paypal_link">Σύνδεσμος Paypal</string>
+    <string name="scanned_qr_code">Σαρωμένος QR Κώδικας</string>
+    <string name="qr_code_scanner">ΣΑΡΩΤΗΣ QR ΚΩΔΙΚΑ</string>
+    <string name="title">Τίτλος</string>
+    <string name="subtitle">Υπότιτλος</string>
+    <string name="enter_your_text_content">Εισάγετε το κείμενό σας</string>
+    <string name="tiktok_url">TikTok URL</string>
+    <string name="spotify_url">Spotify URL</string>
+    <string name="twitter_url">Twitter URL</string>
+    <string name="_92">+92</string>
+    <string name="http">http://</string>
+    <string name="https">https://</string>
+    <string name="www">www.</string>
+    <string name="com">.com</string>
+    <string name="_923">+92</string>
+    <string name="network_name">Όνομα Δικτύου</string>
+    <string name="password">Κωδικός</string>
+    <string name="youtube_url">YouTube URL</string>
+    <string name="label">Ετικέτα</string>
+
+
+    <string name="email_two">Ηλεκτρονικό ταχυδρομείο</string>
+    <string name="website">Ιστοσελίδα</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="contact">Επαφή</string>
+    <string name="cell_phone">Κινητό τηλέφωνο</string>
+    <string name="sms">SMS</string>
+    <string name="my_card">Η Κάρτα μου</string>
+    <string name="calendar">Ημερολόγιο</string>
+    <string name="gps_two">GPS</string>
+    <string name="clipboard">Πρόχειρο</string>
+    <string name="text">Κείμενο</string>
+    <string name="item_code">Κωδικός αντικειμένου</string>
+
+    <!-- Social -->
+    <string name="facebook">Facebook</string>
+    <string name="youtube">YouTube</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="paypal">PayPal</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="spotify">Spotify</string>
+    <string name="tiktok">TikTok</string>
+    <string name="viber">Viber</string>
+    <string name="discord">Discord</string>
+
+
+    <string name="_youtube">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="_wifi">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_whatsapp">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_website">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_viber">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_twitter">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_tiktok">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_text">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="qr_creator_style">Δημιουργός QR</string>
+    <string name="create_spotify">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="app_setting">Ρυθμίσεις εφαρμογής</string>
+    <string name="others_new">Άλλα</string>
+    <string name="phone_no">Αριθμός τηλεφώνου</string>
+    <string name="please_enter_your_message">Παρακαλώ εισάγετε το μήνυμά σας</string>
+    <string name="create_sms">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="saveqrscaned">Αποθήκευση</string>
+    <string name="share_qrscanned">Κοινή χρήση</string>
+    <string name="result_goes_here">Το αποτέλεσμα εμφανίζεται εδώ</string>
+    <string name="create_paypal">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="please_enter_content_card">Παρακαλώ εισάγετε περιεχόμενο</string>
+    <string name="email_address_card">Διεύθυνση Email</string>
+    <string name="create_product">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_insta">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_hitory">Δημιουργία</string>
+    <string name="qr_creator_history">Δημιουργός QR</string>
+    <string name="create_gps">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_fb">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_email">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_discord">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="qr_creator_create">Δημιουργός QR</string>
+    <string name="create_contact">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_clipboard">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="create_cell">ΔΗΜΙΟΥΡΓΙΑ</string>
+    <string name="qr_creator_settings">Δημιουργός QR</string>
+
+
+    <string name="create_botton_nav">Δημιουργία</string>
+    <string name="history_botton_nav">Ιστορικό</string>
+    <string name="style_botton_nav">Στυλ</string>
+    <string name="settings_botton_nav">Ρυθμίσεις</string>
+    <string name="language">Γλώσσα</string>
+    <string name="english">Αγγλικά</string>
+
+
+
+
 </resources>

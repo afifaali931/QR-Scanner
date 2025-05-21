@@ -439,7 +439,8 @@
         tools:layout="@layout/fragment_created_q_r">
         <argument
             android:name="qrData"
-            app:argType="string" />
+            app:argType="string"
+            android:defaultValue=""/>
 
         <argument
             android:name="qrType"
@@ -452,7 +453,13 @@
             android:defaultValue="create" />
         <action
             android:id="@+id/action_createdQRFragment_to_styleFragment"
-            app:destination="@id/styleFragment" />
+            app:destination="@id/styleFragment">
+        <argument
+            android:name="qrData"
+            app:argType="string"
+            android:defaultValue=""/>
+        </action>
+
 
     </fragment>
     <fragment

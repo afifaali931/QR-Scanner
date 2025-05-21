@@ -28,7 +28,7 @@
         android:backgroundTintMode="add"
         android:elevation="50dp"
         android:shadowColor="@color/black"
-        android:text="QR CODE SCANNER"
+        android:text="@string/qr_code_scanner"
         android:textSize="90sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/progressBar"

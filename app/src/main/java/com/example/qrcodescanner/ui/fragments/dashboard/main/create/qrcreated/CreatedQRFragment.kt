@@ -3,10 +3,8 @@ package com.example.qrcodescanner.ui.fragments.dashboard.main.create.qrcreated
 import android.content.ContentValues
 import android.content.Intent
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -16,14 +14,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.print.PrintHelper
 import com.example.qrcodescanner.R
 import com.example.qrcodescanner.data.entities.SavedQrCodeEntity
 import com.example.qrcodescanner.databinding.FragmentCreatedQRBinding
-import com.example.qrcodescanner.ui.fragments.dashboard.main.main.MainFragment
-import com.example.qrcodescanner.ui.fragments.dashboard.main.style.StyleFragment
 import com.example.qrcodescanner.utils.Constants.QR_CREATED
 import com.example.qrcodescanner.viewmodel.QrCodeViewModel
 import com.google.zxing.BarcodeFormat
@@ -40,7 +37,7 @@ class CreatedQRFragment : Fragment() {
     private lateinit var binding: FragmentCreatedQRBinding
     private val args: CreatedQRFragmentArgs by navArgs()
     private val qrCodeViewModel: QrCodeViewModel by viewModel()
-
+    private val timestamp = System.currentTimeMillis()
 
     private var isExpanded = false
 
@@ -65,9 +62,11 @@ class CreatedQRFragment : Fragment() {
 
         binding.tvQrType.text = qrType
         handleDataDesc(qrData, qrType)
+        generateQrCodeBitmap(qrData)
 
         val qrBitmap = generateQrCodeBitmap(qrData)
         binding.imgQrCode.setImageBitmap(qrBitmap)
+
 
         binding.tvSeeMore.setOnClickListener {
             isExpanded = !isExpanded
@@ -84,7 +83,6 @@ class CreatedQRFragment : Fragment() {
         }
 
 
-
         binding.layoutShare.setOnClickListener{
             shareQrCode()
         }
@@ -94,6 +92,7 @@ class CreatedQRFragment : Fragment() {
             saveQrCodeToGalleryAndDatabase()
         }
         binding.layoutStyle.setOnClickListener {
+
             findNavController().navigate(R.id.action_createdQRFragment_to_styleFragment)
             Log.e("CreatedQRFragment", "navigateToStyleFragmentfrom Created Fragment", )
         }
@@ -101,30 +100,36 @@ class CreatedQRFragment : Fragment() {
         binding.layoutPrint.setOnClickListener {
             printQrCode()
         }
+
+    }
+
+    private fun generateQrCodeBitmap(data: String): Bitmap {
+        val size = 512
+        val writer = QRCodeWriter()
+        val bitMatrix = writer.encode(data, BarcodeFormat.QR_CODE, size, size)
+        return BarcodeEncoder().createBitmap(bitMatrix)
     }
 
     private fun saveQrCodeToGalleryAndDatabase() {
         val drawable = binding.imgQrCode.drawable
         if (drawable is BitmapDrawable) {
             val bitmap = drawable.bitmap
-
-
-            val filename = "QR_${System.currentTimeMillis()}.png"
+            val filename = "QR_${timestamp}.png"
             val file = File(requireContext().filesDir, filename)
+
             FileOutputStream(file).use {
                 bitmap.compress(Bitmap.CompressFormat.PNG, 100, it)
             }
 
-
-            val qrType = binding.tvQrType.text.toString()
-            val qrContent = binding.tvQrContent.text.toString()
-            val createdDate = getCurrentDateTime()
+//            val qrType = binding.tvQrType.text.toString()
+//            val qrContent = binding.tvQrContent.text.toString()
+//            val createdDate = getCurrentDateTime()
 
             val qrCode = SavedQrCodeEntity(
                 imagePath = file.absolutePath,
-                qrType = qrType,
-                content = qrContent,
-                createdDate = createdDate,
+                qrType = binding.tvQrType.text.toString(),
+                content = binding.tvQrContent.text.toString(),
+                createdDate = getCurrentDateTime(),
                 isBookmarked = false,
                 generatedQrType = QR_CREATED
             )
@@ -245,16 +250,6 @@ class CreatedQRFragment : Fragment() {
         }
     }
 
-
-    private fun generateQrCodeBitmap(data: String): Bitmap {
-        val size = 512
-        val writer = QRCodeWriter()
-        val bitMatrix = writer.encode(data, BarcodeFormat.QR_CODE, size, size)
-        return BarcodeEncoder().createBitmap(bitMatrix)
-    }
-
-
-
     private fun printQrCode() {
         val drawable = binding.imgQrCode.drawable
         if (drawable is BitmapDrawable) {
@@ -273,7 +268,7 @@ class CreatedQRFragment : Fragment() {
             val bitmap = drawable.bitmap
 
             val contentValues = ContentValues().apply {
-                put(MediaStore.Images.Media.DISPLAY_NAME, "qr_code_${System.currentTimeMillis()}.png")
+                put(MediaStore.Images.Media.DISPLAY_NAME, "qr_code_${timestamp}.png")
                 put(MediaStore.Images.Media.MIME_TYPE, "image/png")
                 put(MediaStore.Images.Media.IS_PENDING, 1)
             }
@@ -337,3 +332,49 @@ class CreatedQRFragment : Fragment() {
     }
 }
 
+//val  options = createQrVectorOptions {
+//
+//            padding = .125f
+//
+////            background {
+////                drawable = ContextCompat
+////                    .getDrawable(context, R.drawable.ic_frame_one)
+////            }
+//
+//            logo {
+//                drawable = ContextCompat
+//                    .getDrawable(context, R.drawable.ic_scan_round)
+//                size = .25f
+//                padding = QrVectorLogoPadding.Natural(.2f)
+//                shape = QrVectorLogoShape
+//                    .Circle
+//            }
+//            colors {
+//                dark = QrVectorColor
+//                    .Solid(Color(0xff345288))
+//                ball = QrVectorColor.Solid(
+//                    ContextCompat.getColor(context, R.color.green_200)
+//                )
+//                frame = QrVectorColor.LinearGradient(
+//                    colors = listOf(
+//                        0f to android.graphics.Color.RED,
+//                        1f to android.graphics.Color.BLUE,
+//                    ),
+//                    orientation = QrVectorColor.LinearGradient
+//                        .Orientation.LeftDiagonal
+//                )
+//            }
+//            shapes {
+//                darkPixel = QrVectorPixelShape
+//                    .RoundCorners(.5f)
+//                ball = QrVectorBallShape
+//                    .RoundCorners(.25f)
+//                frame = QrVectorFrameShape
+//                    .RoundCorners(.25f)
+//            }
+//        }
+//
+//        val data = QrData.Url(qrType)
+//
+//        val drawable : Drawable = QrCodeDrawable(data, options)
+//
